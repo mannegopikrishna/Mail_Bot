@@ -17,7 +17,7 @@ from mail_bot.prompts import answer_template, standalone_request_template
 load_dotenv(override=True)
 
 # Retrieve the Google API key from environment variables
-GOOGLE_API_KEY_ = "AIzaSyBLGNN8w4TKAgo_gZOh83_44TlVjAi2y4w"#os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY_ = os.getenv("GOOGLE_API_KEY")
 
 # Define the maximum number of interactions before clearing memory
 MAX_COUNTER = 10
